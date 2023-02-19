@@ -1,1 +1,44 @@
+# # key: value
+# # key: title
+# # value: Website Name
 
+# title: Website Name
+# description: A website for making website pages
+# age: 30
+# #stings, arrays, objects
+
+# #Array: 
+# tags:
+#   - tech
+#   - images
+#   - creative
+# # Indentaion matters
+# # spaces
+
+# #objects
+# address:
+#   street: MG ROAD
+#   city: Bengaluru
+#   state: KA
+
+# # Github actions
+# # env variables
+# value: ${{env.VALUE}}
+# variable: ${{github.VARABLES_NAME}}
+
+
+name: Github action ofr
+on:
+  push:
+  branches: [master]
+jobs:
+  biuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Print node version
+        run: node --version
+      - name: Print NPM version
+        run: npm --version
+      - name: Print pwd
+        run: pwd
