@@ -30,7 +30,7 @@
 name: Github action ofr
 on:
   push:
-  branches: [master]
+    branches: [master]
 jobs:
   biuild:
     runs-on: ubuntu-latest
